@@ -6,6 +6,7 @@ app = Flask(__name__)
 def hello(): 
     return "Hello World"
 
-@app.route("/upload_data"):
+@app.route("/upload_data", methods=["GET"]):
 def upload_data():
-    return "not implemented"
+    data = request.data
+    print data # for now 
