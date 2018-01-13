@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <SceneKit/SceneKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
 #import <ARKit/ARKit.h>
 
 @interface ViewController : UIViewController
