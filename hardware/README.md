@@ -1,3 +1,5 @@
-# Hardware Program And Design
+# Hello World Example
 
-To properly compile, you must have Bluekitchen's BTStack library. To do so, you need to clone this repository recursively. Also required is the ESP32 IDF, along with the Xtensa-esp32-elf toolkit.
+Starts a FreeRTOS task to print "Hello World"
+
+See the README.md file in the upper level 'examples' directory for more information about examples.
