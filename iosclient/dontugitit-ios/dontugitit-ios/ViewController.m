@@ -41,10 +41,10 @@
     self.sceneView.showsStatistics = YES;
     
     // Create a new scene
-    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
+//    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
 	
     // Set the scene to the view
-    self.sceneView.scene = scene;
+//    self.sceneView.scene = scene;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -67,6 +67,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - NEHostspotConfig
+
+- (void) connect: (NSString *)ssid_name completionHandler: (void(^)(NSError*error)) handler {
+	NEHotspotConfiguration *configuration = [[NEHotspotConfiguration alloc] initWithSSID: ssid_name];
+	configuration.joinOnce = YES;
+	[[NEHotspotConfigurationManager sharedManager] applyConfiguration: configuration completionHandler: handler];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -111,6 +119,9 @@
 	[self.motionManager startGyroUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMGyroData * _Nullable gyroData, NSError * _Nullable error) {
 			// handle new motion data
 			// self.handle it!
+		if (error != nil) {
+			NSLog(@"%@", [error localizedDescription]);
+		}
 		NSLog(@"got gyro data");
 	}];
 }

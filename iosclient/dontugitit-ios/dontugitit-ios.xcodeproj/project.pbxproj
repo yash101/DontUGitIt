@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D94B861F200AA34D00857978 /* dontugitit-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "dontugitit-ios.entitlements"; sourceTree = "<group>"; };
 		D951C1CF2009DB9A0010CF26 /* dontugitit-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dontugitit-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D951C1D22009DB9A0010CF26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D951C1D32009DB9A0010CF26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +81,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94B861C200AA34D00857978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D951C1C62009DB9A0010CF26 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +95,7 @@
 				D951C1EC2009DB9B0010CF26 /* dontugitit-iosTests */,
 				D951C1F72009DB9B0010CF26 /* dontugitit-iosUITests */,
 				D951C1D02009DB9A0010CF26 /* Products */,
+				D94B861C200AA34D00857978 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 		D951C1D12009DB9A0010CF26 /* dontugitit-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D94B861F200AA34D00857978 /* dontugitit-ios.entitlements */,
 				D951C1D22009DB9A0010CF26 /* AppDelegate.h */,
 				D951C1D32009DB9A0010CF26 /* AppDelegate.m */,
 				D951C1D52009DB9A0010CF26 /* art.scnassets */,
@@ -203,6 +213,11 @@
 					D951C1CE2009DB9A0010CF26 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					D951C1E82009DB9B0010CF26 = {
 						CreatedOnToolsVersion = 9.2;

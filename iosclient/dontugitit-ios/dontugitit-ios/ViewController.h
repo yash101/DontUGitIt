@@ -10,6 +10,7 @@
 #import <SceneKit/SceneKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
+#import <NetworkExtension/NetworkExtension.h>
 #import <ARKit/ARKit.h>
 
 @interface ViewController : UIViewController
