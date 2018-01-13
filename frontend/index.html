@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    	<link rel="stylesheet" href="./style.css">
+    <head>
+        <title>Simple Map</title>
 
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        position: absolute;
-        left: 250px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
 
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPShg94EI9KZ1A7oAfH2XJKm_YBojI4Tk&callback=initMap" defer async></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
 
-  <body>
-
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 32.2319, lng: -110.9501},
-          zoom: 8,
-          gestureHandling: 'greedy'
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPShg94EI9KZ1A7oAfH2XJKm_YBojI4Tk&callback=initMap"
-    async defer></script>
-
-      <script>
-          document.getElementByClassName("main-menu").onmouseover(function(){});
-      </script>
-
-
-
-
-    <nav class="main-menu">
+    <body>
+        <div id="map"></div>
+        <nav class="main-menu">
             <ul>
                 <li>
                     <a href="http://justinfarrow.com">
@@ -58,7 +24,7 @@
                             Access Point
                         </span>
                     </a>
-                  
+
                 </li>
                 <li class="has-subnav">
                     <a href="#">
@@ -67,7 +33,7 @@
                             Devices
                         </span>
                     </a>
-                    
+
                 </li>
                 <li class="has-subnav">
                     <a href="#">
@@ -76,7 +42,7 @@
                             Heatmap
                         </span>
                     </a>
-                    
+
                 </li>
                 <li class="has-subnav">
                     <a href="#">
@@ -85,7 +51,7 @@
                             Statistics
                         </span>
                     </a>
-                   
+
                 </li>
                 <li>
                    <a href="#">
@@ -103,7 +69,7 @@
                         </span>
                     </a>
                 </li>
-                
+
             </ul>
 
             <ul class="logout">
@@ -118,20 +84,7 @@
             </ul>
         </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+    </body>
 </html>
 
 
