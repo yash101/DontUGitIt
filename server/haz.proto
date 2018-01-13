@@ -1,0 +1,12 @@
+syntax = "proto3"
+
+package haz;
+
+message Trial {
+  repeated Data data = 1;
+}
+
+message Data {
+	required int32 timestamp = 1;
+	required int32 
+}
