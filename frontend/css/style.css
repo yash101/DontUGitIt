@@ -4,6 +4,11 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #map {
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
     position: absolute;
     left: 60px;
     right: 0px;
@@ -37,6 +42,11 @@ overflow:visible;
 }
 
 .main-menu {
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+-ms-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+transition: all 0.25s linear;
 background:#fbfbfb;
 border-right:1px solid #e5e5e5;
 position:absolute;
