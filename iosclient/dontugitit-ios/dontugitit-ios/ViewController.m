@@ -68,14 +68,14 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
-
-#pragma mark - NEHostspotConfig
-
-- (void) connect: (NSString *)ssid_name completionHandler: (void(^)(NSError*error)) handler {
-	NEHotspotConfiguration *configuration = [[NEHotspotConfiguration alloc] initWithSSID: ssid_name];
-	configuration.joinOnce = YES;
-	[[NEHotspotConfigurationManager sharedManager] applyConfiguration: configuration completionHandler: handler];
-}
+//
+//#pragma mark - NEHostspotConfig
+//
+//- (void) connect: (NSString *)ssid_name completionHandler: (void(^)(NSError*error)) handler {
+//	NEHotspotConfiguration *configuration = [[NEHotspotConfiguration alloc] initWithSSID: ssid_name];
+//	configuration.joinOnce = YES;
+//	[[NEHotspotConfigurationManager sharedManager] applyConfiguration: configuration completionHandler: handler];
+//}
 
 #pragma mark - CLLocationManagerDelegate
 
