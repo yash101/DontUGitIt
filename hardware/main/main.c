@@ -1,0 +1,42 @@
+#define GPS_MISO 16
+#define GPS_MOSI 17
+
+#define BUF_SIZE 1024
+
+#include <stdio.h>
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+#include "esp_system.h"
+#include "driver/uart.h"
+#include "freertos/queue.h"
+#include "soc/uart_struct.h"
+
+static uart_config_t gps_config = {
+	.baud_rate = 9600,
+	.data_bits = UART_DATA_8_BITS,
+	.parity = UART_PARITY_DISABLE,
+	.stop_bits = UART_STOP_BITS_1,
+	.rx_flow_ctrl_thresh = 122
+};
+
+void app_main()
+{
+	uart_param_config(UART_NUM_2, &gps_config);
+	uart_set_pin(UART_NUM_2, GPS_MOSI, GPS_MISO);
+}
+
+/*
+ *
+ * DontUGitIt - WiFi-based visualization tool that allows you to find where all devices are
+ * Provided under a GPL license, found under the root of the project directory on GitHub. Will be replaced with an actual license
+ * (C) Devyash Lodha, 2018
+ *
+ */
+
+#include "btstack.h"
+
+int btstack_main(int argc, const char** argv)
+{
+}
