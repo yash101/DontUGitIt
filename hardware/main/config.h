@@ -19,4 +19,7 @@
 // Status LED
 #define STATUS_LED 5
 
+
+#define BUF_SIZE 1024
+
 #endif
