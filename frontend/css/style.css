@@ -23,7 +23,7 @@ html, body {
 }
 
 #floating-panel {
-        position: absolute;
+        position: fixed;
         bottom: 10px;
         left: 37.5%;
         z-index: 5;
